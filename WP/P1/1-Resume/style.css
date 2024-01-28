@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(148, 172, 218);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume{
+    height: fit-content;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.personal{
+    text-align: center;
+}
+.info span img{
+    width: 15px;
+}
+.info span a{
+    text-decoration: none;
+    color: black;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    text-decoration: underline;
+}
