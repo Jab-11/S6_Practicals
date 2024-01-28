@@ -1,1 +1,0 @@
-# S6_Practicals
