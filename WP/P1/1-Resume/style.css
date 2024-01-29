@@ -35,4 +35,93 @@ body{
     align-items: center;
     gap: 7px;
     text-decoration: underline;
+    /* background-color: red; */
 }
+.education{
+    margin:3px 3px;
+    text-align: left;   
+}
+
+.edinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 3px 5px;
+}
+.skills{
+    margin:3px 3px;
+    text-align: left;
+    padding: 3px 5px;
+}
+.skilinfo{
+    padding: 3px 5px;
+    
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+fieldset{
+    border-radius: 10px;
+    padding: 3px 2px;
+    margin: auto 3px;
+    width: 625px;
+}
+.soft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 3px 5px;
+    margin-top: -3px;
+}
+.certifications{
+    margin:3px 3px;
+    text-align: left;
+    padding: 3px 5px;
+}
+.certi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 3px 5px;
+}
+.certi a{
+    text-decoration: none;
+    color: black;
+}
+#c2r{
+    margin-right: 38px;
+}
+
+.other {
+    display: flex;
+    flex-direction: row;
+    margin:3px 3px;
+    text-align: left;
+    padding: 3px 5px;
+}
+
+.fieldset-container {
+    width: 315px;
+    margin: 5px; /* Add margin for spacing */
+}
+
+.fieldset-container fieldset{
+    width: 305px;
+}
+
+.fieldset-container ul{
+    list-style: none;
+}
+
