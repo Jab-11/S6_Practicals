@@ -11,13 +11,15 @@ body{
 }
 .resume{
     height: fit-content;
-    width: 650px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     background-color: white;
     justify-content: center;
     align-items: center;
     gap: 3px;
+    margin: 5px auto;
+    zoom: 75%;
 }
 .personal{
     text-align: center;
@@ -72,17 +74,27 @@ fieldset{
     border-radius: 10px;
     padding: 3px 2px;
     margin: auto 3px;
-    width: 625px;
+    width: 575px;
+}
+/* .soft{
+    
+} */
+.skilinfo{
+    display: flex;
+    /* background-color: yellow; */
+    height: fit-content;
+    flex-wrap: wrap;
+
+}
+.hard, .soft{
+    width: 50%;
+    max-width: 260px;
+    /* background-color: red; */
 }
 .soft{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 5px;
-    padding: 3px 5px;
-    margin-top: -3px;
+    margin-left: 0px;
 }
+
 .certifications{
     margin:3px 3px;
     text-align: left;
@@ -113,12 +125,12 @@ fieldset{
 }
 
 .fieldset-container {
-    width: 315px;
+    width: 287px;
     margin: 5px; /* Add margin for spacing */
 }
 
 .fieldset-container fieldset{
-    width: 305px;
+    width: 260px;
 }
 
 .fieldset-container ul{
