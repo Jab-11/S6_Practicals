@@ -84,13 +84,9 @@ fieldset{
     /* background-color: yellow; */
     height: fit-content;
     flex-wrap: wrap;
+    gap: 6%;
+}
 
-}
-.hard, .soft{
-    width: 50%;
-    max-width: 260px;
-    /* background-color: red; */
-}
 .soft{
     margin-left: 0px;
 }
@@ -118,22 +114,12 @@ fieldset{
 
 .other {
     display: flex;
-    flex-direction: row;
-    margin:3px 3px;
+    flex-direction: column;
+    margin: 3px 3px;
     text-align: left;
     padding: 3px 5px;
 }
 
 .fieldset-container {
-    width: 287px;
-    margin: 5px; /* Add margin for spacing */
+    margin: 5px;
 }
-
-.fieldset-container fieldset{
-    width: 260px;
-}
-
-.fieldset-container ul{
-    list-style: none;
-}
-
