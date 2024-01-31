@@ -6,7 +6,7 @@ body{
     background-color: rgb(148, 172, 218);
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .resume{
@@ -59,9 +59,13 @@ body{
 }
 .skilinfo{
     padding: 3px 5px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
-
+.hard, .soft{
+    width: 45%;
+}
 legend {
     background-color: #000;
     color: #fff;
@@ -76,9 +80,8 @@ fieldset{
     margin: auto 3px;
     width: 575px;
 }
-/* .soft{
-    
-} */
+
+
 .skilinfo{
     display: flex;
     /* background-color: yellow; */
@@ -87,9 +90,7 @@ fieldset{
     gap: 6%;
 }
 
-.soft{
-    margin-left: 0px;
-}
+
 
 .certifications{
     margin:3px 3px;
@@ -98,11 +99,13 @@ fieldset{
 }
 .certi{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 5px;
+    /* align-items: flex-start; */
+    /* gap: 5px; */
     padding: 3px 5px;
+}
+.right{
+    text-align: end;
 }
 .certi a{
     text-decoration: none;
@@ -122,4 +125,12 @@ fieldset{
 
 .fieldset-container {
     margin: 5px;
+}
+
+.certificate{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    background-color: RED;
 }
