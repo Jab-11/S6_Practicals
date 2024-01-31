@@ -38,8 +38,8 @@ nav{
     /* background-color: yellow; */
 }
 .img{
-    /* background-image: url(https://ldce.ac.in/img/sliders/safeguard-your-future-gIe02l.jpg); */
-    background-color: red;
-    width: 100%;
-    height: 50%;
+    background-image: url("https://ldce.ac.in/img/sliders/safeguard-your-future-gIe02l.jpg");
+    width: 100dvw;
+    height: 100dvh;
+    
 }
