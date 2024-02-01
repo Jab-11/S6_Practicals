@@ -20,8 +20,9 @@ nav{
 }
 .title img{
     margin-top: 5px;
-    margin-right: 7px;
-    border-right: 1px solid white;
+    margin-right: 10px;
+    padding-right: 5px;
+    border-right: 3px solid white;
 }
 
 .ops ul{
@@ -29,18 +30,94 @@ nav{
     display: flex;
     align-items: center;
     /* gap: 2em; */
-    background-color: #c61919;
+    /* background-color: #c61919; */
+    background-color:hsl(0deg 77.58% 40%);
+    color: hsl(0, 0%, 90%);
     height: 100%;
 }
 .ops ul li{
     padding: 1em 2em;
+    /* margin: 0px auto; */
     font-family: 'Oswald', sans-serif;
-    font-size: 1em;
+    font-size: 17px;
+    /* height: 100%; */
+    /* text-align: center; */
+    /* font-weight: 800; */
     /* background-color: yellow; */
 }
+.ops ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 90%);
+}
+.ops ul li:hover{
+    background-color:hsl(0deg 77.58% 50%);
+    color: hsl(0, 0%, 100%);
+}
+
 .img{
     background-image: url("https://ldce.ac.in/img/sliders/safeguard-your-future-gIe02l.jpg");
-    width: 100dvw;
-    height: 100dvh;
-    
+    width: 100vw;
+    height: 87vh;
+    filter: blur(10px);
+    /* height: 100%; */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .img-text h1{
+    font-family: Oswald;
+    font-size: 12rem;
+    letter-spacing: 2rem;
+} */
+.img-text h1 {
+    font-family: Oswald;
+    font-size: 12rem;
+    text-shadow: 2px 2px white,
+                -2px -2px white,
+                2px -2px white,
+                -2px 2px white;
+
+    /* color: rgba(0, 0, 0, 0.4); */
+    /* background-image: linear-gradient(transparent 50%, white 50%); */
+    /* letter-spacing: 4rem; */
+    /* color: #6b6b6b; */
+    /* #2a9ec3
+    #21974d
+    #faba16
+    #e12529
+    #f9f9f3 */
+    /* color: linear-gradient(to right,#2a9ec3,#21974d, #faba16,#e12529); */
+    /* background: linear-gradient(to right, #2a9ec3, #21974d, #faba16, #e12529);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; */
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.img-text h1 span:not(:last-child) {
+    letter-spacing: 3rem; /* Adjust the value as needed */
+}
+
+.img-text p{
+    font-family:'Space Grotesk', sans-serif;
 }
