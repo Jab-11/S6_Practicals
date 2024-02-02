@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #004574; 
+}
+/* Name: Crayola Yellow-Green
+Hex: #BCE784
+Name: Medium Aquamarine
+Hex: #5DD39E
+Name: Moonstone
+Hex: #3EA3C6
+Name: Dark Cerulean
+Hex: #004574
+Name: Titanium Yellow
+Hex: #F1E600 */
+nav{
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    background-color: #3EA3C6;
+}
+nav h2{
+    margin: 0.4em 0;
+}
+nav a{
+    text-decoration: none;
+    color: #F1E600;
+    font-size: 2rem;
+    font-family: 'Lobster Two', sans-serif;
+    background-color: #3EA3C6;
+}
+
+.audios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 75%;
+    margin:2em auto;
+}
+
+.card{
+    background-color: #5DD39E;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.7em 0.5em;
+    box-sizing: border-box;
+    width: 30%; 
+    /* margin-bottom: 2em; */
+    
+}
+
+.card img{
+    padding-bottom: 100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px; 
+    
+}
