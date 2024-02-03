@@ -7,6 +7,78 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #FFB6C1, #FFDAB9, #FFB6C1);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.title {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    gap: 5%;
+}
+
+.box {
+    box-sizing: content-box;
+    border: 2px solid #8a4baf;
+    border-radius: 8px;
+    height: 80px;
+    flex-basis: calc(25% - 10px); /* 25% for 4 boxes in a row, minus the gap */
+    /* flex-grow: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 0 0 8px #8a4baf;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+    </style>
 </head>
 <body>
 
