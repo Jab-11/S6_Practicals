@@ -28,6 +28,7 @@ main{
     width:20%;
     background-color: hsl(0, 100%, 22%);
     color:hsl(54, 77%, 80%);
+    /* overflow: hidden; */
 }
 .right{
     width:80%;
@@ -35,6 +36,7 @@ main{
     color:hsl(54, 77%, 65%);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .leftContainer ul {
     list-style: none;
@@ -97,4 +99,16 @@ main{
     display: grid;
     grid-template-columns: 20% 80%;
     font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (max-width:450px){
+    .left{
+        /* overflow: hidden; */
+    }
+    .leftContainer li {
+        background-color: red;
+        /* font-size: 0.rem; */
+        padding: 0.5em 0em;
+        
+    }
 }
