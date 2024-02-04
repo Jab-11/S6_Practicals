@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 :root{
     --primary-color: #8B0000;
@@ -11,6 +12,7 @@
 
 nav{
     background-color: var(--primary-color);
+    width: 100dvw;
 }
 nav h1{
     color: var(--secondary-color);
@@ -28,41 +30,49 @@ main{
     width:20%;
     background-color: hsl(0, 100%, 22%);
     color:hsl(54, 77%, 80%);
-    /* overflow: hidden; */
 }
 .right{
     width:80%;
     background-color: hsl(0, 100%, 37%);
+    
+    
+}
+.rightContainer{
+    width: 100%;
     color:hsl(54, 77%, 65%);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    padding:1em 2%;
 }
 .leftContainer ul {
     list-style: none;
-    margin-top: 1em;;
+    margin-top: 1em;
 }
 
 .leftContainer li {
     padding: 0.5em 1em; 
+    width: 100%;
 }
 
 .leftContainer a{
     color: #F0E68C;
     text-decoration: none;
+    padding: 0.2em;
+    display: block;
+}
+
+.leftContainer a:hover {
+    background-color: var(--primary-color); 
 }
 
 .title{
     display: flex;
     flex-direction: row;
-    /* justify-content:space-around; */
     gap: 4.5em;
     align-items: center;
     padding:2em 4.5em;
-    /* background-color:var(--accent-color); */
 }
 .title img{
-    /* width: 220px; */
     height: 275px;
 }
 .desc{
@@ -75,7 +85,7 @@ main{
     gap: 0.2em;
 }
 .basic p{
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     margin-bottom: 0.2em;
     display: flex;
     gap:0.3em;
@@ -91,9 +101,6 @@ main{
     margin-bottom: 0.2em;
     font-weight: 100;
 }
-.info{
-    /* background-color: antiquewhite; */
-}
 .crew{
     margin-top: 1em;
     display: grid;
@@ -102,7 +109,6 @@ main{
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     gap:0.2em 0.5em;
-    /* background-color: aqua; */
 }
 .item p{
     margin: 0;
@@ -112,10 +118,16 @@ main{
 .item span {
     display: block;
 }
+.desc{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    /* background-color: aqua; */
+    width: 100%;
+}
 @media (max-width:900px){
     
     .basic p{
-        font-size: 0.3rem;
+        font-size: 0.4rem;
         /* margin-bottom: 0.2em; */
         display: flex;
         gap:0.3em;
@@ -136,5 +148,8 @@ main{
     }
     .title img{
         margin-left: auto;
+    }
+    .right{
+        overflow: scroll;
     }
 }
