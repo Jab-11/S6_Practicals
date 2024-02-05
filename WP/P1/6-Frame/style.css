@@ -73,7 +73,8 @@ main{
     padding:2em 4.5em;
 }
 .title img{
-    height: 275px;
+    /* height: 275px; */
+    width: 200px;
 }
 .desc{
     padding:2em 4.5em;
@@ -148,6 +149,7 @@ main{
     }
     .title img{
         margin-left: auto;
+        align-self: center;
     }
     .right{
         overflow: scroll;
