@@ -7,6 +7,14 @@ table,th,td{
     border-collapse: collapse;
     width: max-content;
 }
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    text-align: center;
+}
 td{
     padding: 10px;
 }
