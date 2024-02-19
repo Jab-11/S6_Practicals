@@ -3,7 +3,6 @@
     padding: 0; 
     box-sizing: border-box; 
  } 
-  
  header{ 
     height: 70px; 
     width: 100dvw; 
@@ -13,11 +12,9 @@
     z-index: 11; 
     color: #f9f9f3; 
  } 
-  
  main{ 
     margin-top: 70px; 
  } 
-  
  nav{ 
     height: 70px; 
     width: 100dvw; 
@@ -25,7 +22,6 @@
     justify-content: space-between; 
     background-color: #00008b; 
  } 
-  
  .title{ 
     height: 100%; 
     width: 60%; 
@@ -35,11 +31,9 @@
     padding-left: 3%; 
     gap: 2.4%; 
  } 
-  
  .title img{ 
     height: 90%; 
  } 
-  
  .title h2{ 
     border-left: 3px solid white; 
     padding-left: 2%; 
@@ -48,8 +42,6 @@
     color: white; 
     font-family: Oswald; 
  } 
-  
-  
  .ops{ 
     display: flex; 
     height: 100%; 
@@ -58,7 +50,6 @@
     justify-content: center; 
     align-items: center; 
  } 
-  
  .ops ul{ 
     display: flex; 
     justify-content: center; 
@@ -66,7 +57,6 @@
     gap: 5%; 
     width: 100%; 
  } 
-  
  .ops ul li{ 
     list-style: none; 
     display: flex; 
@@ -74,23 +64,19 @@
     align-items: center; 
     flex-direction: column; 
  } 
-  
  .ops ul li a{ 
     color: #f9f9f3; 
     font-family: Oswald;
     text-decoration: none; 
  } 
-  
  .ops ul li a:hover{ 
     text-shadow: 0 0 4px black; 
  } 
-  
  .ops i{ 
     display: none; 
     font-size: 120%;
     color: #f9f9f3; 
  } 
-  
  .underline{ 
     height: .5px; 
     width: 0px; 
@@ -98,11 +84,9 @@
     transition: width .35s linear; 
     margin-top: 2px; 
  } 
-  
  li:hover .underline{ 
     width: 100%; 
   } 
-  
  .opsm{ 
     transform: translateY(-100vh); 
     transition: transform .35s ease-in; 
@@ -116,7 +100,6 @@
     position: absolute; 
     width: 100dvw; 
  } 
-  
  .opsm ul{ 
     height: 100%; 
     display: flex; 
@@ -124,21 +107,17 @@
     align-items: center; 
     flex-direction: column; 
  } 
-  
  .opsm ul li{ 
     list-style: none; 
  } 
-  
  .opsm ul li a{ 
     color: white; 
     font-family: Oswald;
     text-decoration: none; 
  } 
-  
  .opsm ul li a:hover{ 
     text-shadow: 0 0 4px black; 
  } 
-  
  .img{ 
     background-image: url("https://ldce.ac.in/img/sliders/safeguard-your-future-gIe02l.jpg"); 
     width: 100vw; 
@@ -148,7 +127,6 @@
     background-size: cover; 
     position: absolute; 
  } 
-  
  .img-text{ 
     position: absolute; 
     top: 50%; 
@@ -161,7 +139,6 @@
     justify-content: center; 
     align-items: center; 
  } 
-  
  .img-text h1 { 
     font-family: Oswald; 
     font-size: 12rem; 
@@ -171,45 +148,36 @@
                 -2px 2px #f9f9f3; 
     color: #666666;  
  } 
-  
  .img-text h1 span:not(:last-child) { 
     letter-spacing: 3rem; 
  } 
  .img-text p{ 
     font-family:'Space Grotesk', sans-serif; 
  } 
-  
  .active{ 
     text-shadow: 0 0 5px black; 
  } 
-
  .abouts{ 
    position: absolute; 
    display: flex; 
    flex-direction: column;
    justify-content: space-evenly; 
    align-items: center; 
-   
    font-family: 'Space Grotesk', sans-serif; 
    background-color: #f9f9f3; 
    min-height: calc(100% - 70px);
  } 
-  
-
  .abouts h1{ 
     width: 100%; 
     text-align: center; 
     font-family: Oswald, sans-serif; 
  } 
-  
- 
-  .containers{
+ .containers{
    position: absolute; 
    display: flex; 
    flex-direction: column;
    justify-content: space-evenly; 
    align-items: center; 
-   
    font-family: 'Space Grotesk', sans-serif; 
    background-color: #f9f9f3; 
    min-height: calc(100% - 70px);
@@ -241,7 +209,6 @@
    width: 90%; 
    margin-top: 30px; 
 } 
- 
 .welcome ul, .vision ul{ 
    list-style: none; 
 }

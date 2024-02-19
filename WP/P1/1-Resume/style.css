@@ -37,13 +37,11 @@ body{
     align-items: center;
     gap: 7px;
     text-decoration: underline;
-    /* background-color: red; */
 }
 .education{
     margin:3px 3px;
     text-align: left;   
 }
-
 .edinfo{
     display: flex;
     flex-direction: row;
@@ -73,25 +71,18 @@ legend {
     border-radius: 6px;
     margin-left: 5px;
 }
-
 fieldset{
     border-radius: 10px;
     padding: 3px 2px;
     margin: auto 3px;
     width: 575px;
 }
-
-
 .skilinfo{
     display: flex;
-    /* background-color: yellow; */
     height: fit-content;
     flex-wrap: wrap;
     gap: 6%;
 }
-
-
-
 .certifications{
     margin:3px 3px;
     text-align: left;
@@ -100,8 +91,6 @@ fieldset{
 .certi{
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-start; */
-    /* gap: 5px; */
     padding: 3px 5px;
 }
 .right{
@@ -114,7 +103,6 @@ fieldset{
 #c2r{
     margin-right: 38px;
 }
-
 .other {
     display: flex;
     flex-direction: column;
@@ -122,11 +110,9 @@ fieldset{
     text-align: left;
     padding: 3px 5px;
 }
-
 .fieldset-container {
     margin: 5px;
 }
-
 .certificate{
     display: flex;
     justify-content: space-between;
