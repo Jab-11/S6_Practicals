@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P3_1_Prime</title>
+    <title>P3_2_Pattern-1</title>
     <style>
         *{
             margin: 0;
@@ -23,13 +23,11 @@
         .con p{
             margin: 1.5em;
             font-size: 1.5rem;
-            /* font-family; */
         }
         input{
             margin: 2em 0;
         }
         input[type=submit]{
-            /* margin-top: 2em; */
             padding: 0.5em 1em;
             border-radius: 0.5em;
             border: 1px solid #555;
@@ -49,13 +47,13 @@
 
         .result{
             margin-top: 2em;
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <div class="con">
-        <p>Find out Prime</p>
+<div class="con">
+        <h2>Pattern - 1 </h2>
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <label for="num">Enter a number: </label>
             <input type="number" name="num" id="num"><br>
@@ -65,27 +63,25 @@
         <?php
             if(isset($_POST['num'])){
                 $num = $_POST['num'];
-                $is_prime = true;
-                if($num < 1){
-                    echo "Invalid input";
-                    return;
-                }
-                else if($num == 1){
-                    echo "$num is not a prime";
-                    return;
-                }
-                for ($i = 2; $i < $num; $i++) {
-                    if($num % $i == 0){
-                        $is_prime = false;
-                        break;
+                $n = 1;
+                $c = 'a';
+                for($i = 1; $i <= $num; $i++){
+                    if($i % 2 == 0){
+                        for($j = 1; $j <= $i; $j++){
+                            echo "$c ";
+                            $c++;
+                        }
                     }
-                }
-                if($is_prime){
-                    echo "$num is a prime";
-                } else {
-                    echo "$num is not a prime";
+                    else{
+                        for($j = 1; $j <= $i; $j++){
+                            echo "$n ";
+                            $n++;
+                        }
+                    }
+                    echo PHP_EOL;
                 }
             }
+            
         ?>
         </p>
     </div>
