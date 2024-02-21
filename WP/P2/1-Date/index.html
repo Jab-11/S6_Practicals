@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2_1_Date</title>
+    <style>
+        .con{
+            width: 70%;
+            background-color: wheat;
+            border: 1px solid #555;
+            border-radius: 5px;
+            margin: 1em auto;
+            text-align: center;
+            font-size: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <p>Today is,</p>
+        <p id="date"></p>
+    </div>
+    <script>
+        var d = document.getElementById('date');
+        var today =  new Date();
+
+        d.innerHTML = `${today.toLocaleDateString()}, ${today.toLocaleTimeString()}`;
+    </script>
+</body>
+</html>

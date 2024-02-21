@@ -4,54 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P3_1_Prime</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .con{
-            margin: 2em auto;
-            width: 75%;
-            background-color: rgb(255, 255, 193);
-            color: black;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            border: 1px solid black;
-            text-align: center;
-            border-radius: 0.5em;
-        }
-        .con p{
-            margin: 1.5em;
-            font-size: 1.5rem;
-            /* font-family; */
-        }
-        input{
-            margin: 2em 0;
-        }
-        input[type=submit]{
-            /* margin-top: 2em; */
-            padding: 0.5em 1em;
-            border-radius: 0.5em;
-            border: 1px solid #555;
-            background-color: hsl(108, 60%, 75%); 
-            color: #555;
-            cursor: pointer;
-            transition: all 0.5s linear; 
-        }
-
-
-        input[type=submit]:hover {
-            background-color: hsl(108, 65%, 65%); 
-            color: #000;
-            border: 2px solid #000;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .result{
-            margin-top: 2em;
-            font-size: 0.7rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="con">

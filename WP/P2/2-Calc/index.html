@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2_2_Calculator</title>
+    <style>
+        .num-grid{
+            background-color: #777;
+            border: 1px solid black;
+            padding: 0.5em;
+            margin: 1em auto;
+            width: fit-content;
+            border-radius: 5px;
+            align-self: center;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 0.1em;
+        
+        }
+        .num-grid button {
+            width: 2em;
+            height: 2em;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 1px black;
+        }
+        .num-grid button[value='CA']{
+            width: 100%;
+        }
+        #result{
+            grid-column: span 4;
+            background-color: rgba(25, 104, 25, 0.432);
+            width: 100%;
+            font-size: 1.5em;
+            /* padding: 0.1em; */
+            border-radius: 5px;
+            text-align: right;
+            margin: 2px 0;
+            border: 1px solid green;
+            /* height: 100%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="num-grid">
+        <p id="result">0</p>
+        <button onclick="append(1)">1</button>
+        <button onclick="append(2)">2</button>
+        <button onclick="append(3)">3</button>
+        <button onclick="append('+')">+</button>
+        <button onclick="append(4)">4</button>
+        <button onclick="append(5)">5</button>
+        <button onclick="append(6)">6</button>
+        <button onclick="append('-')">-</button>
+        <button onclick="append(7)">7</button>
+        <button onclick="append(8)">8</button>
+        <button onclick="append(9)">9</button>
+        <button onclick="append('*')">*</button>
+        <button onclick="append(0)">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="append('/')">/</button>
+        <button onclick="clearResult()" value="CA" style="grid-column: span 4;">AC</button>
+    </div>
+
+    <script>
+        function append(value){
+            if(result.innerHTML == 0){
+                result.innerHTML = value;
+            }
+            else{
+                result.innerHTML += value;
+            }
+        }
+        function clearResult(){
+            document.getElementById('result').innerHTML = '0';
+        }
+        function calculate(){
+            result.innerHTML = eval(result.innerHTML);
+        }
+    </script>
+</body>
+</html>
