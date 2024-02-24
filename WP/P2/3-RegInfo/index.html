@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>P2_3_Registration Form Info</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div id="form" style="display: block;">
+      <h2>Registration Form</h2>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name"/>
+          </li>
+          <li>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob">
+          </li>
+          <li>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+          </li>
+          <li>
+            <label for="mobile">Mobile No.:</label>
+            <input type="number" name="mobile" id="mobile">
+          </li>
+          <li>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+          </li>
+          <li>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="" disabled selected>Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+          </li>
+          <li>
+            <label for="education">Education:</label>
+            <input type="checkbox" name="education" id="upto 10th">upto 10th
+            <input type="checkbox" name="education" id="upto 12th">upto 12th
+            <input type="checkbox" name="education" id="U. G.">U. G.
+            <input type="checkbox" name="education" id="P. G.">P. G.
+            <input type="checkbox" name="education" id="Ph. D.">Ph. D.
+          </li>
+          <li>
+            <label for="img">Upload Your Image:</label>
+            <input type="file" name="img" id="img">
+          </li>
+          <li>
+            <button type="submit" onclick="toggleVisibility()">Submit</button>
+          </li>
+        </ul>
+    </div>
+    <div id="info" class="info-container" style="display: none;">
+      <h2>User Information</h2>
+      <div class="basic">
+        <img src="" alt="User Image" id="uimg" class="user-image">
+        <div class="right">
+          <table class="basic-info">
+            <tr>
+              <td>Name:</td>
+              <td id="name_info"></td>
+            </tr>
+            <tr>
+              <td>Date of Birth:</td>
+              <td id="dob_info"></td>
+            </tr>
+            <tr>
+              <td>Gender:</td>
+              <td id="gender_info"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="other_info">
+        <table class="other-info">
+          <tr>
+            <td>Email:</td>
+            <td id="mail_info"></td>
+          </tr>
+          <tr>
+            <td>Mobile:</td>
+            <td id="mobile_info"></td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td id="address_info"></td>
+          </tr>
+          <tr>
+            <td>State:</td>
+            <td id="state_info"></td>
+          </tr>
+          <tr>
+            <td>Education:</td>
+            <td id="education_info"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+     
+    <script src="script.js"></script>
+</body>
+</html>

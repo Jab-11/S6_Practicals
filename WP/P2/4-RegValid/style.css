@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightblue;
+    text-align: center;
+    /* overflow-y:hidden; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+#form{
+    background-color: rgb(226, 225, 225);
+    margin: 10px auto;
+    width: max-content;
+    padding: 1.5em 1.5em 0 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    visibility: visible;
+    font-size: 1rem;
+}
+#form h2{
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-weight: 300;
+}
+#form table,tr,td{
+  /* border:1px solid black; */
+  border-collapse: collapse;
+  text-align: left;
+}
+#form td{
+  vertical-align: top;
+  padding: 0.4em 1em 0.4em 0;
+}
+#form .e_row td{
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  color: red;
+  font-size: 0.57rem;
+  font-weight: 500;
+}
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+input{
+  padding: 0.1em;
+}
+input[type=radio], input[type=checkbox]{
+    margin: 5px;
+}
+button{
+  display: block;
+  padding: 0.5em 1em;
+  margin: 0.5em auto;
+  border-radius: 1em;
+}
+.info-container {
+  background-color: rgb(226, 225, 225);
+  margin: 10px auto;
+  width: 50%;
+  padding: 1em;
+  padding-left: 3em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+.info-container h2 {
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-weight: 100;
+}
+
+.basic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10%;
+}
+
+.user-image {
+  height: 200px;
+  width: 170px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.other_info {
+  margin: 2em auto;
+}
+
+.basic-info, .other-info {
+  width: 100%;
+  text-align: left;
+}
+
+.basic-info td, .other-info td {
+  padding: 0.5em;
+}
+
+
+
+
