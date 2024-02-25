@@ -10,7 +10,7 @@
             border: 1px solid black;
             padding: 0.5em;
             margin: 1em auto;
-            width: fit-content;
+            width: 197px;
             border-radius: 5px;
             align-self: center;
             display: grid;
@@ -40,6 +40,9 @@
             margin: 2px 0;
             border: 1px solid green;
             /* height: 100%; */
+            overflow-x: hidden;
+            font-family: Consolas;
+            /* white-space:wrap; */
         }
     </style>
 </head>
@@ -66,12 +69,36 @@
     </div>
 
     <script>
-        function append(value){
-            if(result.innerHTML == 0){
-                result.innerHTML = value;
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+            if (!isNaN(key) || key === '.' || key === '+' || key === '-' || key === '*' || key === '/') {
+                append(key);
+            } else if (key === 'Enter') {
+                calculate();
+            } else if (key === 'Escape') {
+                clearResult();
+            } else if (key === 'Backspace') {
+                backSpace();
             }
-            else{
-                result.innerHTML += value;
+        });
+
+        
+        function backSpace(){
+            var res = document.getElementById('result').textContent;
+            if(res.length == 1){
+                document.getElementById('result').textContent = 0;
+                return;
+            }
+            document.getElementById('result').textContent = res.substring(0, res.length-1)
+        }
+        function append(value){
+            var res = document.getElementById('result').textContent;
+            if(res === 'Infinity' || res === 'undefined') {
+                document.getElementById('result').textContent = value;
+            } else if(res === '0') {
+                document.getElementById('result').textContent = value;
+            } else {
+                document.getElementById('result').textContent += value;
             }
         }
         function clearResult(){
